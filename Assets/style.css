@@ -1,0 +1,92 @@
+#quizboard {
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 30%;
+    width: 50%;
+    height: 500px;
+    display: none;
+
+}
+
+
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: blueviolet;
+    border-radius: 10px;
+    color:white;
+    padding: 14px 40px;
+    font-size: 24px;
+    border: none;  
+    margin: 30px;
+    display: block; 
+
+}
+
+h1 {
+    text-align: center;
+    padding: 85px;
+    font-style: bold;
+    font-size: 50px;
+
+}
+
+p {
+    font-size: 24px;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+
+}
+
+#startbtn {
+    background-color: blueviolet;
+    font-size: 32px;
+    padding: 14px 40px;
+    border-radius: 12px; 
+    color: white; 
+
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hide{
+    display:none;
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+
+ }
+ 
+ #timer {       
+    font-size: 30px;  
+
+}
+
+#highscore {
+    font-size: 30px;    
+
+}
+
+#submitInitials {
+    background-color: blueviolet;
+    border-radius: 10px;
+    color:white;
+    padding: 10spx;
+    font-size: 24px;
+    border-color: white;    
+
+}
+
+input {
+    padding: 15px 2px;
+    font-size: 25px;
+    width: 100px;
+
+}
