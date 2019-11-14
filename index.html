@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coding Quiz Challenge</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+  <title>
+    Javascript Quiz
+  </title>
+  <link rel="stylesheet" href="Assets/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="Javascript" href="Assets/index.js" />
 
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-9"></div>
+    <div class="col-md-1" id="timer">
+      Timer 75
+    </div>
+  </div>
+  <br />
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="top">
-            <div id="highscore">Highscore</div>
-            <div id="timer">Timer</div>
-        </div>
-    </div>
-    <div id="startpg">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers
-            will penalize your score/time by ten seconds!</p>
-        <br>
-
-    </div>
-    <div class="container">
-        <div id="quizboard" class="hide">
-            <div id="actualQuestion">Question</div>
-            <br>
-            <div id="answerBtns">
-                <button id="btn0" class="btn">Answer 1</button>
-                <button id="btn1" class="btn">Answer 2</button>
-                <button id="btn2" class="btn">Answer 3</button>
-                <button id="btn3" class="btn">Answer 4</button>
-            </div>
-        </div>
-        <div class="controls">
-            <button id="startbtn" onclick="startquiz()">Start Quiz</button>
-            <div id="countdown"></div>
-        </div>
-    </div>
-        <div id="end">
-
-            
-        </div>
-
-
-
-
-    <script src="./Assets/index.js"></script>
-
+  <div class="startPage">
+    <h1 id="top">
+      Coding Quiz Challenge
+    </h1>
+    <br />
+    <p>
+      Answer the following multiple choice questions about coding. Each time you miss a 
+      question, you lose 10 seconds. Try to get the highest score!
+    </p>
+    <button id="start">
+      Start Quiz
+    </button>
+  </div>
+  <div class="one">
+    <h1 id="quiz"></h1>
+    <button id="btn0"></button>
+    <br />
+    <button id="btn1"></button>
+    <br />
+    <button id="btn2"></button>
+    <br />
+    <button id="btn3"></button>
+  </div>
+  <div id="name">
+    <h3>All Done!</h3>
+    <h5 id="finalScore">g</h5>
+    Name:<input type="text" />
+    <button id="submitInitials">Submit</button>
+  </div>
+  <div id="highScoresList"></div>
+  <script src="Assets/index.js"></script>
 </body>
 
 </html>
