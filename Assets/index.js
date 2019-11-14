@@ -106,9 +106,7 @@ function timer() {
 
   }, 1000);
 }
-function restart() {
 
-}
 
 //this is the function that will create local storage for highscore
 function scoreResults() {
