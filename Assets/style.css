@@ -22,11 +22,7 @@ input {
     display: block; 
 
 }
-/* making sure the text is big and the same size for these two items. */
-#timer, #highscore {       
-    font-size: 30px;  
 
-}
 /* giving style to the heading */
 h1 {
     text-align: center;
@@ -44,12 +40,15 @@ p {
 
 }
 /* Making the start button look good */
-#startbtn {
+#start {
     background-color: blueviolet;
     color: white; 
     font-size: 32px;
     padding: 14px 40px;
     border-radius: 12px; 
+    align-content: center;
+    position: fixed;
+    left: 855px;
 
 }
 /* style to the controls */
@@ -65,16 +64,7 @@ p {
     justify-content: space-between;
 
  }
-/* giving the quiz a good look and size */
-#quizboard {
-    padding: 10px;
-    margin-top: 100px;
-    margin-left: 30%;
-    width: 50%;
-    height: 500px;
-    display: none;
 
-}
 /* creating the submit section styling */
 #submitInitials {
     background-color: blueviolet;
