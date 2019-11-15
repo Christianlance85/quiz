@@ -1,22 +1,22 @@
-var time = document.getElementById('timer');
-var secondsLeft = 75;
-var startBtn = document.querySelector('#start');
-var startP = document.querySelector('.startPage');
-var one = document.querySelector('.one');
-var title = one.querySelector('h1');
+let time = document.getElementById('timer');
+let secondsLeft = 75;
+let startBtn = document.querySelector('#start');
+let startP = document.querySelector('.startPage');
+let one = document.querySelector('.one');
+let title = one.querySelector('h1');
 one.style.display = 'None';
-var i = 0;
-var buttons = one.querySelectorAll('button');
-var username = document.querySelector('#name');
+let i = 0;
+let buttons = one.querySelectorAll('button');
+let username = document.querySelector('#name');
 username.style.display = 'None';
-var submit = document.querySelector('#submit');
-var timerInterval;
-var finalScore = username.querySelector('h5');
-var list = document.querySelector('#highScoresList');
-var highScores = [];
-var uname = document.querySelector('input').value;
+let submit = document.querySelector('#submit');
+let timerInterval;
+let finalScore = username.querySelector('h5');
+let list = document.querySelector('#highScoresList');
+let highScores = [];
+let uname = document.querySelector('input').value;
 
-var questions = [
+let questions = [
   {
     title: 'Commonly used data types DO NOT include:',
     choices: ['strings', 'booleans', 'alerts', 'numbers'],
@@ -58,9 +58,9 @@ function setTime() {
 
 startBtn.addEventListener('click', function () {
   one.style.display = 'block';
-  var q = questions[i];
+  let q = questions[i];
   title.innerHTML = q['title'];
-  var j = 0;
+  let j = 0;
   buttons.forEach(function (btntxt) {
     btntxt.innerText = q['choices'][j];
     j += 1;
@@ -73,9 +73,9 @@ startBtn.addEventListener('click', function () {
 
 function displayQuestion() {
   i++;
-  var q = questions[i];
+  let q = questions[i];
   title.innerHTML = q['title'];
-  var j = 0;
+  let j = 0;
   buttons.forEach(function (btntxt) {
     btntxt.innerText = q['choices'][j];
     j += 1;
@@ -93,7 +93,7 @@ function lastPage() {
 
 buttons.forEach(function (btn) {
   btn.addEventListener('click', function () {
-    var q = questions[i];
+    let q = questions[i];
     if (i == questions.length - 1 && btn.textContent == q['answer']) {
       time.textContent = secondsLeft - 0
       lastPage()
@@ -119,10 +119,10 @@ buttons.forEach(function (btn) {
 
 
 submitInitials.addEventListener('click', function () {
-  var uname = document.querySelector('input').value;
+  let uname = document.querySelector('input').value;
   localStorage.setItem('name', JSON.stringify (uname));
   localStorage.setItem('score', JSON.stringify (time.textContent));
-  var li = document.createElement("li");
+  let li = document.createElement("li");
   li.textContent = uname + ' Score: ' + time.textContent;
   list.appendChild(li);
 
